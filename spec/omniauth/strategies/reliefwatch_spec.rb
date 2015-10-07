@@ -14,7 +14,7 @@ describe OmniAuth::Strategies::Reliefwatch do
     end
 
     it 'has correct site' do
-      expect(subject.options.client_options.site).to eq('https://reliefwatch.com')
+      expect(subject.options.client_options.site).to eq('http://localhost:3000')
     end
 
     it 'has correct authorize url' do

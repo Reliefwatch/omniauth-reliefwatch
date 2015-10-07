@@ -5,7 +5,7 @@ module OmniAuth
     class Reliefwatch < OmniAuth::Strategies::OAuth2
       option :name, :reliefwatch
       DEFAULT_SCOPE = 'public'
-      option :client_options, :site          => 'https://reliefwatch.com',
+      option :client_options, :site          => 'http://localhost:3000',
                               :authorize_url => '/oauth/authorize'
 
       uid { raw_info['id'] }
