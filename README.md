@@ -5,6 +5,23 @@ Reliefwatch OAuth2 Strategy for OmniAuth 1.0.
 
 Supports the OAuth 2.0 server-side and client-side flows.
 
+### Using omniauth-reliefwatch to your gemfile
+
+Because you may want reference your own local reliefwatch app (which needs to be running at [localhost:3000](http://localhost:3000)), there is a branch that uses `localhost:3000` instead of `reliefwatch.com`.
+
+So, depending on what you want to be doing, add the following to your `Gemfile`:
+
+**Production** (*reliefwatch.com*)
+
+    gem 'omniauth-reliefwatch'
+
+**Local** (*http://localhost:3000*)
+    
+    gem 'omniauth-reliefwatch', github: "reliefwatch/omniauth-reliefwatch", branch: 'local'
+
+
+... and if you're using the local branch, anywhere that it says `https://reliefwatch.com` in this readme, you should imagine it says `http://localhost:3000` instead.
+
 
 ## Creating an application
 
@@ -18,10 +35,6 @@ Once you've added your application and your routes, you'll be able to see your A
 Check out **[API V1 Documentation](https://reliefwatch.com/documentation/api_v1)** to see what can be done with authenticated users.
 
 ## Usage with rails and Devise
-
-First add it to you Gemfile:
-
-`gem 'omniauth-reliefwatch'`
 
 Here's a quick example, adding the middleware to a Rails app in
 `config/initializers/omniauth.rb`:
@@ -70,4 +83,4 @@ The response will include a `uid` from Reliefwatch for the user and nothing else
 
 -----
 
-Based on [omniauth-bike-index](https://github.com/bikeindex/omniauth-bike-index)
+Based on [omniauth-bike-index](https://github.com/bikeindex/omniauth-bike-index) :dog:
