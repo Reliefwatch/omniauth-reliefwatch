@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Seth Herr']
   s.summary       = 'Reliefwatch strategy for OmniAuth'
   s.description   = 'Reliefwatch strategy for OmniAuth v1.2'
-  s.homepage      = 'https://github.com/Reliefwat/omniauth-reliefwatch'
+  s.homepage      = 'https://github.com/Reliefwatch/omniauth-reliefwatch'
   s.license       = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
