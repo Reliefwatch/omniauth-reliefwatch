@@ -5,6 +5,14 @@ Reliefwatch OAuth2 Strategy for OmniAuth 1.0.
 
 Supports the OAuth 2.0 server-side and client-side flows.
 
+### Adding omniauth-reliefwatch to your gemfile
+
+Because you may want reference your own local reliefwatch app (which needs to be running at http://localhost:3000).
+
+**Production**: add 'gem 'omniauth-reliefwatch'` to your gemfile
+
+**Local**: `gem 'omniauth-reliefwatch', github: "reliefwatch/omniauth-reliefwatch", branch: 'local'` to your gemfile instead.
+
 
 ## Creating an application
 
